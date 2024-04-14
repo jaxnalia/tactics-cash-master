@@ -32,6 +32,8 @@
 	import rob from "$lib/images/rob.png";
 	import lit from "$lib/images/litbr.png";
 	import lean from "$lib/images/lean.png";
+	import nuke from "$lib/images/tactical-nuke.png";
+	import care from "$lib/images/Care_Package.webp"
 
 	let earnedTokens;
 	let stakedLean;
@@ -60,22 +62,24 @@
 
 
 </script>
+<svelte:head>
+	<title>Farm / TACTICS</title>
+</svelte:head>
 <GetContractData />
 <div style="background-color: --background;" class='relative flex flex-col items-center backdrop-blur'>
 	<div class="h-10" />
-	<h1 class='font-bebas-neue uppercase text-4xl font-black flex flex-col container leading-none'>
+	<h1 class='font-sans uppercase text-xl sm:text-3xl font-extrabold flex flex-col container leading-none'>
 		<span
-			class="text-6xl"
-			style="color: transparent; background-clip: text; -webkit-background-clip: text; background-image: url('https://media1.giphy.com/media/toYOS2FIQKGH1NJ060/giphy.gif');"
-			>LEAN Farms</span
-		>Stake LP Tokens to earn 💜
+			class="text-4xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300"
+			>Tactical Farms</span
+		>Stake Tokens to earn
 	</h1>
 	<div class="h-10 h-10" />
 	<Tabs.Root value="pools" class="w-96 sm:w-4/5 mb-10" style="max-width: 1000px;">
 		<div class="flex justify-end">
 			<Tabs.List class="grid w-full grid-cols-2 sm:max-w-xs">
-				<Tabs.Trigger value="pools">Pools</Tabs.Trigger>
-				<Tabs.Trigger value="earn">Earn LEAN 💜</Tabs.Trigger>
+				<Tabs.Trigger value="pools">Liquidity Farm</Tabs.Trigger>
+				<Tabs.Trigger value="earn">Single Staking</Tabs.Trigger>
 				
 			</Tabs.List>
 		</div>
@@ -83,116 +87,21 @@
 		<Tabs.Content value="earn">
 			<Card.Root class="backdrop-blur w-96 sm:w-auto">
 				<Card.Header class="p-5">
-					<h1 class="text-3xl font-bold">Earn LEAN 💜</h1>
-					<Card.Title>Stake <strong>LEAN-WPLS LP</strong> to earn <strong>LEAN</strong></Card.Title>
+					<h1 class="text-3xl font-bold">Single staking</h1>
+					<Card.Title>Stake tokens & earn passive yield</Card.Title>
 				</Card.Header>
 				<Card.Content>
 					<Card.Description>
-
-						<!-- {#if account.isConnected}
-							<GetContractData />
-							<script>
-								console.log();("true");
-							</script>
-						{/if} -->
-						
-						<div class="flex flex-row">
-							<div class="flex justify-center flex-col font-dm text-sm font-medium">
-								<p class="px-2">LEAN Earned:<br />{earnedTokens}</p>
-								<p class="px-2">LEAN/WPLS LP Staked:<br />{stakedLean}</p>
-								<p class="px-2">LEAN Balance:<br />{leanBalance}</p>
-								<p class="px-2">LP Balance:<br />{lpBalance}</p>
-								<!-- <p class="px-2">50000000</p> total -->
-								<!-- <Progress value={earnedTokens} max={50000000} /> -->
-								<!-- <div style="justify-content:space-between;" class="flex">
-									<p>0</p>
-									<p>100,000,000</p>
-								</div> -->
-								<p class="px-2">Daily Distribution:<br />0.0 LEAN</p>
-							</div>
-							<div class="flex flex-col font-dm text-sm font-medium">
-								<p class="px-2">Finished</p>
-							</div>
-						</div>
+						Coming soon ;)
 					</Card.Description>
 				</Card.Content>
-				<div style="justify-content: space-around;" class="px-6 flex flex-row">
-					<span style="text-decoration: underline;" class="flex flex pb-3">
-						<div></div>
-						<a
-							style="font-size: 12px;"
-							href="https://bafybeicjuszlj6w3gg5mfszvo7z6ux4iaafhw62vfyfw27nm65bexodov4.ipfs.dweb.link/#/address/0x0EDD0cFEE6d9987C446c301E4f1960d29F704Eb8"
-							target="_blank">View Contract
-						</a>
-							<ExternalLink size={10} />
-							<!-- <Separator orientation="vertical" class="" /> -->
-					</span>
-					<span style="text-decoration: underline;" class="flex flex pb-3">
-							<a
-							style="font-size: 12px;"
-							href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/add/V2/PLS/0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
-							target="_blank">Add Liquidity
-						</a>
-							<ExternalLink size={10} />
-					</span>
-					<span style="text-decoration: underline;" class="flex flex pb-3">
-						<a
-						style="font-size: 12px;"
-						href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
-						target="_blank">Trade LEAN
-					</a>
-						<ExternalLink size={10} />
-					</span>
-				</div>
-				
 				
 				
 
 				<Card.Footer class="space-x-3 flex justify-center p-4">
-					<ApproveTokens />
-					<ClaimRewards />
+					<!-- <ApproveTokens />
+					<ClaimRewards /> -->
 
-					<AlertDialog.Root>
-						<AlertDialog.Trigger asChild let:builder>
-							<Button disabled builders={[builder]}>Stake</Button>
-						</AlertDialog.Trigger>
-						<AlertDialog.Content>
-							<AlertDialog.Header>
-								<AlertDialog.Title>Stake LEAN/WPLS LP 💜</AlertDialog.Title>
-								<!-- <AlertDialog.Description>
-										How many tokens do you want to stake?
-									</AlertDialog.Description> -->
-							</AlertDialog.Header>
-
-							<AlertDialog.Footer>
-								<StakeTokens />
-								<!-- <Input type="email" placeholder="Amount" />
-									<AlertDialog.Action>Claim</AlertDialog.Action>
-									<AlertDialog.Cancel>Cancel</AlertDialog.Cancel> -->
-							</AlertDialog.Footer>
-						</AlertDialog.Content>
-					</AlertDialog.Root>
-
-					<AlertDialog.Root>
-						<AlertDialog.Trigger asChild let:builder>
-							<Button builders={[builder]}>Withdraw</Button>
-						</AlertDialog.Trigger>
-						<AlertDialog.Content>
-							<AlertDialog.Header>
-								<AlertDialog.Title>Withdraw LEAN/WPLS LP 💜</AlertDialog.Title>
-								<!-- <AlertDialog.Description>
-																	How many tokens do you want to stake?
-																</AlertDialog.Description> -->
-							</AlertDialog.Header>
-
-							<AlertDialog.Footer>
-								<WithdrawTokens />
-								<!-- <Input type="email" placeholder="Amount" />
-																<AlertDialog.Action>Claim</AlertDialog.Action>
-																<AlertDialog.Cancel>Cancel</AlertDialog.Cancel> -->
-							</AlertDialog.Footer>
-						</AlertDialog.Content>
-					</AlertDialog.Root>
 					
 				</Card.Footer>
 			</Card.Root>
@@ -200,8 +109,8 @@
 		<Tabs.Content value="pools"> 
 			<Card.Root class="backdrop-blur w-96 sm:w-auto">
 				<Card.Header class="p-5">
-					<h1 class="text-3xl font-bold">Pools</h1>
-					<Card.Title>Stake PulseX V2 liquidity and earn <strong>LIT</strong></Card.Title>
+					<h1 class="text-3xl font-bold">Liquidity Farm</h1>
+					<Card.Title>Stake PulseX V2 liquidity & earn <span class="font-bold">CARE</span></Card.Title>
 				</Card.Header>
 				<Card.Content class="p-5 py-0 text-center">
 					<div class="flex justify-between mb-2">
@@ -209,18 +118,18 @@
 
 							<div style="transform: translate(0, 8px)">
 								
-								<img style="position: absolute; transform: translate(0px, 0px);" src={lean} alt="LEAN" width="48">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={nuke} alt="NUKE" width="48">
 								<img style="position: absolute; transform: translate(0px, 0px);" src={plsx} alt="PLSX" width="20">
 							</div>
 								
 								
 							<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
-							<p class="sm:text-left sm:ml-16">Stake <strong>LEAN-PLSX</strong> Earn <strong>LIT</strong></p>
+							<p class="sm:text-left sm:ml-16">Stake <strong>NUKE-PLSX</strong> earn <strong>CARE</strong></p>
 							
 								<div class="flex justify-end">
 									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
-									<span class="text-xs p-1" style="line-height: 2.2;"><strong>LIT</strong> earned </span>
-									<Button variant="outline" class="p-4">247420.0</Button>
+									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
+									<Button variant="outline" class="p-4">0.0</Button>
 									<Button class="p-2 ml-1"><Minus /></Button>
 									<Button class="p-2 ml-1"><Plus /></Button>
 								</div>
@@ -234,16 +143,41 @@
 
 							<div style="transform: translate(0, 8px)">
 								
-								<img style="position: absolute; transform: translate(0px, 0px);" src={lit} alt="LIT" width="48">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={nuke} alt="NUKE" width="48">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={inc} alt="INC" width="20">
+							</div>
+								
+								
+							<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
+							<p class="sm:text-left sm:ml-16">Stake <strong>NUKE-INC</strong> earn <strong>CARE</strong></p>
+							
+								<div class="flex justify-end">
+									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
+									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
+									<Button variant="outline" class="p-4">0.0</Button>
+									<Button class="p-2 ml-1"><Minus /></Button>
+									<Button class="p-2 ml-1"><Plus /></Button>
+								</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="flex justify-between mb-2">
+						<div class="relative bg-gradient-to-t from-white/5 to-white/15 rounded-sm py-3 px-2 w-full text-right px-3">
+
+							<div style="transform: translate(0, 8px)">
+								
+								<img style="position: absolute; transform: translate(0px, 0px);" src={care} alt="CARE" width="48">
 								<img style="position: absolute; transform: translate(0px, 0px);" src={plsx} alt="PLSX" width="20">
 							</div>
 
 								<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
-								<p class="sm:text-left sm:ml-16">Stake <strong>LIT-PLSX</strong> Earn <strong>LIT</strong></p>
+								<p class="sm:text-left sm:ml-16">Stake <strong>CARE-PLSX</strong> earn <strong>CARE</strong></p>
 							
 								<div class="flex justify-end">
 									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
-									<span class="text-xs p-1" style="line-height: 2.2;"><strong>LIT</strong> earned </span>
+									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
 									<Button variant="outline" class="p-4">0.0</Button>
 									<Button class="p-2 ml-1"><Minus /></Button>
 									<Button class="p-2 ml-1"><Plus /></Button>
@@ -257,16 +191,39 @@
 
 							<div style="transform: translate(0, 8px)">
 								
-								<img style="position: absolute; transform: translate(0px, 0px);" src={lit} alt="LIT" width="48">
-								<img style="position: absolute; transform: translate(0px, 0px);" src={lean} alt="LEAN" width="20">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={care} alt="CARE" width="48">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={inc} alt="INC" width="20">
 							</div>
 
 								<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
-								<p class="sm:text-left sm:ml-16">Stake <strong>LIT-LEAN</strong> Earn <strong>LIT</strong></p>
+								<p class="sm:text-left sm:ml-16">Stake <strong>CARE-INC</strong> earn <strong>CARE</strong></p>
 							
 								<div class="flex justify-end">
 									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
-									<span class="text-xs p-1" style="line-height: 2.2;"><strong>LIT</strong> earned </span>
+									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
+									<Button variant="outline" class="p-4">0.0</Button>
+									<Button class="p-2 ml-1"><Minus /></Button>
+									<Button class="p-2 ml-1"><Plus /></Button>
+								</div>
+						</div>
+						
+					</div>
+
+					<div class="flex justify-between mb-2">
+						<div class="relative bg-gradient-to-t from-white/5 to-white/15 rounded-sm py-3 px-2 w-full text-right px-3">
+
+							<div style="transform: translate(0, 8px)">
+								
+								<img style="position: absolute; transform: translate(0px, 0px);" src={care} alt="CARE" width="48">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={nuke} alt="NUKE" width="20">
+							</div>
+
+								<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
+								<p class="sm:text-left sm:ml-16">Stake <strong>CARE-NUKE</strong> earn <strong>CARE</strong></p>
+							
+								<div class="flex justify-end">
+									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
+									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
 									<Button variant="outline" class="p-4">0.0</Button>
 									<Button class="p-2 ml-1"><Minus /></Button>
 									<Button class="p-2 ml-1"><Plus /></Button>
@@ -300,7 +257,7 @@
 						<a
 						style="font-size: 12px;"
 						href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
-						target="_blank">Trade LEAN
+						target="_blank">Trade
 					</a>
 						<ExternalLink size={10} />
 					</span>

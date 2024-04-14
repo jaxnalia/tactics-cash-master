@@ -3,8 +3,9 @@
 		'font-bebas-neue uppercase text-6xl sm:text-7xl font-black flex flex-col leading-none';
 
 	import { ArrowRight } from 'radix-icons-svelte'
-	import vegeta from '$lib/images/vegeta.png'
+	import gradient from '$lib/images/gradientwide.png'
 	import { Badge } from "$lib/components/ui/badge";
+	import rust from "$lib/images/Rust.webp";
 
 </script>
 
@@ -12,32 +13,21 @@
 	<style>
 		.bannerimg{
 			background-position: center;
-			background-size: cover;
+			background-size: 1304px;
 			background-repeat: no-repeat;
-			background-image: URL("https://bigjax.s3.eu-west-2.amazonaws.com/lean-land-i-love-lean.gif");
+			background-image: URL("https://bigjax.s3.eu-west-2.amazonaws.com/Rust.webp");
 		}
 	</style>
 	<div class="flex flex-col relative z-20">
-		<span class="w-20 h-2 bg-purple-900 mb-12" />
-		<!-- <h1 class={title}>
-			<span><span
-				class="text-5xl sm:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600"
-				>$LEAN</span
-			> is</span>
-			leverage on the ecosystem.
-		</h1> -->
+		<span class="mb-24" />
+
 		<h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl drop-shadow-md">
-			<span><span
-				class="text-5xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600"
-				>$LEAN</span
-			> is</span>
-			leverage on the ecosystem.
+			<span class="text-5xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300"
+				>TACTICS</span> is leverage on <span style="background-image: url({gradient});background-size: cover;background-position: center;" class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600">#PulseChain</span>.
 		  </h1>
-		<!-- <div class="h-6 md:h-5" /> -->
+
 		<p class="leading-7 [&:not(:first-child)]:mt-6 drop-shadow-md">
-			LEAN is a unique blend of scarcity, humor, and functionality. With a commitment to being a
-			scarce store of value, LEAN aims to carve out its niche in the decentralized landscape,
-			providing users with a long-lasing community-driven experience.
+			Tactics is a DAO that incentivises a liquidity strategy based on Heart's Law to create an ecosystem bonded with the price appreciation of <span class="underline">PulseX</span> and <span class="underline">Incentive Token</span>.
 		</p>
 		<div class="flex mt-8">
 			<a
@@ -60,25 +50,8 @@
 				</a>
 				
 			</div>
-			<!-- <div class="ml-3 flex flex-col justify-center">
-				<Badge class="" variant="secondary">Bridge</Badge>
-			</div> -->
-			
 
-			<!-- <a
-				href="/paper"
-				class="text-xl font-bold uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-purple-500 text-purple-500 dark:text-white hover:bg-purple-900 hover:text-white text-md"
-			>
-				Lean Paper
-			</a> -->
 		</div>
 	</div>
-	<!-- <div class="hidden sm:block sm:w-2/3 lg:w-4/5 relative">
-		<img
-			class="h-auto w-full rounded-full object-cover object-center p-20"
-			src={vegeta}
-			alt="steeve"
-		/>
-		
-	</div> -->
+
 </div>

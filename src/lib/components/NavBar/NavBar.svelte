@@ -17,10 +17,11 @@
 
 <header class="supports-[backdrop-filter]:bg-background/60 sticky top-0 z-40 w-full border-b bg-background/60 shadow-sm backdrop-blur">
 	<div class="px-2 flex h-14 items-center">
-		<div class="mr-4 hidden md:flex">
+		<div class="mr-4 hidden"> <!--hidden-->
 			<nav class="relative py-2 flex items-center space-x-2 text-sm font-medium">
-				<a href="/" class="mr-3 flex items-center space-x-2">
-					<img src={lean_cup} alt="LEAN" class="w-8" />
+				<a href="/" class="text-xl font-bold mr-3 flex items-center space-x-2">
+					<!-- <img src={lean_cup} alt="LEAN" class="w-8" /> -->
+					TACTICS.CASH
 				</a>
 				<!-- home, charts -->
 				<DropdownMenu.Root>

@@ -35,9 +35,9 @@ const modal = createWeb3Modal({
       injected: 'https://bigjax.s3.eu-west-2.amazonaws.com/bw.webp',
     },
     themeVariables: {
-    // '--w3m-color-mix': '#00BB7F',
-    // '--w3m-color-mix-strength': 10
-      '--w3m-accent': 'blueviolet',
+    '--w3m-color-mix': '#facc14',
+    '--w3m-color-mix-strength': 3,
+      '--w3m-accent': '#facc14'
     },
     
 })
@@ -45,7 +45,7 @@ const modal = createWeb3Modal({
 </script>
 
 <!-- <w3m-network-button /> -->
-<w3m-button style="color: transparent; background-clip: text; -webkit-background-clip: text; background-image: url('https://i.giphy.com/media/jtvB77L0afuXGlO5Uh/giphy-downsized-large.gif');" size="md" label="Connect Wallet" balance="hide"/>
+<w3m-button class="text-black" size="md" label="Connect Wallet" balance="hide"/>
 
 <!-- <button on:click={} class="rounded-md bg-gradient-to-br from-fuchsia-500 to-pink-500 px-3 py-1.5 font-dm text-sm font-medium text-white shadow-md shadow-pink-400/50 transition-transform duration-200 ease-in-out hover:scale-[1.03]">
                     Connect Wallet

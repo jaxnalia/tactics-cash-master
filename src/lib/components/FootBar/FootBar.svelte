@@ -18,24 +18,18 @@
 
 <footer class={footStyle}>
 	<div class="flex flex-col container items-center">
-		<a href="/" class="inline-flex items-center">
+		<!-- <a href="/" class="inline-flex items-center">
 			<img src={lean_cup} alt="Lean" class="h-10" />
-		</a>
+		</a> -->
 		<div class="flex flex-row gap-2 text-lg">
-			<a class="font-bold tracking-wide uppercase" target="_blank" href={link.swap}>buy on PulseX</a
+			<a class="font-bold tracking-wide uppercase" target="_blank" href={link.swap}>buy now</a
 			>
 			|
 			<a class="font-bold tracking-wide uppercase" target="_blank" href={link.explorer}>contract</a>
 		</div>
 		<span class="block text-sm text-center">
-			© 2024 
-			<a
-				style="margin-right: -3px;"
-				href="https://leantoken.org/"
-				class="text-purple-600 hover:underline dark:text-violet-500"
-			>
-				LEAN
-			</a>. Built by
+			
+			Made with ❤️ by
 			<a
 				style="margin-right: -3px;"
 				href="https://x.com/bigjax_pls"

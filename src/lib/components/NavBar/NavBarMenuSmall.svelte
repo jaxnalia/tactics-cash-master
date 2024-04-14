@@ -22,7 +22,7 @@
 
 	<DropdownMenu.Root>
 		<DropdownMenu.Trigger >
-		  <NavLogo />
+		  <NavLogo /> <!--change to hamburger.-->
 		  
 		</DropdownMenu.Trigger>
 		<DropdownMenu.Content class="w-44">
@@ -41,7 +41,7 @@
 			<a href="/farm">
 				<DropdownMenu.Item>
 					<Percent class="mr-2 h-5 w-5" />
-					<span>Staking</span>
+					<span>Farm</span>
 					<!-- <DropdownMenu.Shortcut>⇧⌘P</DropdownMenu.Shortcut> -->
 				  </DropdownMenu.Item>
 			</a>
@@ -148,6 +148,12 @@
 
 		</DropdownMenu.Content>
 	  </DropdownMenu.Root>
+	
+		<a href="/" class="ml-2 text-xl font-bold mr-3 flex items-center space-x-2">
+
+			TACTICS.CASH
+		</a>
+	
 
 
 

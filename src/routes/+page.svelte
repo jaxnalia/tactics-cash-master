@@ -2,6 +2,11 @@
 	import Hero from "./Hero.svelte";
 </script>
 
+<svelte:head>
+	<title>
+		TACTICS
+	</title>
+</svelte:head>
 
 <div class="container mx-auto p-4 sm:p-8 overflow-hidden md:p-10 lg:p-12 z-20 items-center overflow-hidden">
 
@@ -33,25 +38,38 @@
 			Piteas.io
 		</a>
 		<h4 class="mt-2 text-2xl font-extrabold leading-8 text-white sm:text-3xl sm:leading-9">
-			Swap PLS for LEAN
+			Swap Tokens for <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300">$NUKE</span>
 		</h4>
 	
 		<ul class="mt-8 space-y-3 font-medium">
 			<li class="flex items-start lg:col-span-1">
 				<div class="flex-shrink-0">
-					<svg class="w-5 h-5 text-indigo-600" fill="blueviolet" viewBox="0 0 20 20">
+					<svg class="w-5 h-5 text-indigo-600" fill="gold" viewBox="0 0 20 20">
 						<path fill-rule="evenodd"
 							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
 							clip-rule="evenodd"></path>
 					</svg>
 				</div>
 				<p class="ml-3 leading-5">
-					100% Grass roots hood token.
+					Heart's Law. 💛
 				</p>
 			</li>
 			<li class="flex items-start lg:col-span-1">
 				<div class="flex-shrink-0">
-					<svg class="w-5 h-5 text-indigo-600" fill="blueviolet" viewBox="0 0 20 20">
+					<svg class="w-5 h-5 text-indigo-600" fill="gold" viewBox="0 0 20 20">
+						<path fill-rule="evenodd"
+							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</div>
+				<p class="ml-3 leading-5">
+					Grass roots ecosystem.
+				</p>
+			</li>
+			
+			<li class="flex items-start lg:col-span-1">
+				<div class="flex-shrink-0">
+					<svg class="w-5 h-5 text-indigo-600" fill="gold" viewBox="0 0 20 20">
 						<path fill-rule="evenodd"
 							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
 							clip-rule="evenodd"></path>
@@ -63,7 +81,7 @@
 			</li>
 			<li class="flex items-start lg:col-span-1">
 				<div class="flex-shrink-0">
-					<svg class="w-5 h-5 text-indigo-600" fill="blueviolet" viewBox="0 0 20 20">
+					<svg class="w-5 h-5 text-indigo-600" fill="gold" viewBox="0 0 20 20">
 						<path fill-rule="evenodd"
 							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
 							clip-rule="evenodd"></path>
@@ -75,7 +93,7 @@
 			</li>
 			<li class="flex items-start lg:col-span-1">
 				<div class="flex-shrink-0">
-					<svg class="w-5 h-5 text-indigo-600" fill="blueviolet" viewBox="0 0 20 20">
+					<svg class="w-5 h-5 text-indigo-600" fill="gold" viewBox="0 0 20 20">
 						<path fill-rule="evenodd"
 							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
 							clip-rule="evenodd"></path>
@@ -85,18 +103,7 @@
 					Trustless yield without restrictions.
 				</p>
 			</li>
-			<li class="flex items-start lg:col-span-1">
-				<div class="flex-shrink-0">
-					<svg class="w-5 h-5 text-indigo-600" fill="blueviolet" viewBox="0 0 20 20">
-						<path fill-rule="evenodd"
-							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-							clip-rule="evenodd"></path>
-					</svg>
-				</div>
-				<p class="ml-3 leading-5">
-					Dank memes. 💜
-				</p>
-			</li>
+			
 		</ul>
 	</div>
 	
