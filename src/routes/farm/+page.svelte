@@ -239,7 +239,7 @@
 						<div></div>
 						<a
 							style="font-size: 12px;"
-							href="https://bafybeicjuszlj6w3gg5mfszvo7z6ux4iaafhw62vfyfw27nm65bexodov4.ipfs.dweb.link/#/address/0xbE7f4fFfDe4241cA25eb27616aE3974aF0a023fD"
+							href="https://bafybeicjuszlj6w3gg5mfszvo7z6ux4iaafhw62vfyfw27nm65bexodov4.ipfs.dweb.link/"
 							target="_blank">View Contract
 						</a>
 							<ExternalLink size={10} />
@@ -248,7 +248,7 @@
 					<span style="text-decoration: underline;" class="flex flex pb-3">
 							<a
 							style="font-size: 12px;"
-							href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/add/V2/PLS/0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
+							href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/add/V2/PLS/0x6Be2B5a38e04d42FB13d2D16a30Ad92988308125"
 							target="_blank">Add Liquidity
 						</a>
 							<ExternalLink size={10} />
@@ -256,7 +256,7 @@
 					<span style="text-decoration: underline;" class="flex flex pb-3">
 						<a
 						style="font-size: 12px;"
-						href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
+						href="https://bafybeihiwe3inbfru7h6pesaj4siacbyx7t6o5qp3vwdz25n3p6ewlbnie.ipfs.dweb.link/#/?outputCurrency=0x6Be2B5a38e04d42FB13d2D16a30Ad92988308125"
 						target="_blank">Trade
 					</a>
 						<ExternalLink size={10} />
@@ -276,7 +276,7 @@
 	<!-- <div style="justify-content: center;" class="flex"> -->
 		<!-- <Button
 			target="_blank"
-			href="https://app.pulsex.com/swap?outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449"
+			href="https://app.pulsex.com/swap?outputCurrency=0x6Be2B5a38e04d42FB13d2D16a30Ad92988308125"
 			style="line-height: 1.2; width: 12em; margin-top: 0.5em;"
 			class="transition-colors justify-center block shadow-lg text-base text-white hover:text-gray-100 bg-green-500 hover:bg-green-300 hover:backdrop-blur-xl backdrop-blur-lg rounded-md"
 		>
