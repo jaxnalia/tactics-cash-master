@@ -88,7 +88,7 @@
 			<Card.Root class="backdrop-blur w-96 sm:w-auto">
 				<Card.Header class="p-5">
 					<h1 class="text-3xl font-bold">Single staking</h1>
-					<Card.Title>Stake tokens & earn passive yield</Card.Title>
+					<Card.Title>Earn yield with no impermanent loss</Card.Title>
 				</Card.Header>
 				<Card.Content>
 					<Card.Description>
