@@ -21,7 +21,7 @@
 	<iframe
 	class="rounded-xl self-center"
 	title="Swap PLS for LEAN on Piteas.io"
-	src="https://widget.piteas.io/#/swap?theme=dark&inputCurrency=PLS&outputCurrency=0x1c9b5e57AA89f8b58CA28249E347A6C933726449&exactField=input&exactAmount=1000000"
+	src="https://widget.piteas.io/#/swap?theme=dark&inputCurrency=PLS&outputCurrency=0x6Be2B5a38e04d42FB13d2D16a30Ad92988308125&exactField=input&exactAmount=1000000"
 	height="720px"
 	width="100%"
 	style="
