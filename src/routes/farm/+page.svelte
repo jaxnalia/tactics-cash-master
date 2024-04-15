@@ -111,6 +111,7 @@
 				<Card.Header class="p-5">
 					<h1 class="text-3xl font-bold">Liquidity Farm</h1>
 					<Card.Title>Stake PulseX V2 liquidity & earn <span class="font-bold">CARE</span></Card.Title>
+					<p class="absolute font-semibold" style="right:0;transform: translatex(-20px)"><span class="font-bold">CARE</span> per block: 0</p>
 				</Card.Header>
 				<Card.Content class="p-5 py-0 text-center">
 					<div class="flex justify-between mb-2">
@@ -169,6 +170,29 @@
 							<div style="transform: translate(0, 8px)">
 								
 								<img style="position: absolute; transform: translate(0px, 0px);" src={care} alt="CARE" width="48">
+								<img style="position: absolute; transform: translate(0px, 0px);" src={nuke} alt="NUKE" width="20">
+							</div>
+
+								<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
+								<p class="sm:text-left sm:ml-16">Stake <strong>CARE-NUKE</strong> earn <strong>CARE</strong></p>
+							
+								<div class="flex justify-end">
+									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
+									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
+									<Button variant="outline" class="p-4">0.0</Button>
+									<Button class="p-2 ml-1"><Minus /></Button>
+									<Button class="p-2 ml-1"><Plus /></Button>
+								</div>
+						</div>
+						
+					</div>
+
+					<div class="flex justify-between mb-2">
+						<div class="relative bg-gradient-to-t from-white/5 to-white/15 rounded-sm py-3 px-2 w-full text-right px-3">
+
+							<div style="transform: translate(0, 8px)">
+								
+								<img style="position: absolute; transform: translate(0px, 0px);" src={care} alt="CARE" width="48">
 								<img style="position: absolute; transform: translate(0px, 0px);" src={plsx} alt="PLSX" width="20">
 							</div>
 
@@ -209,28 +233,7 @@
 						
 					</div>
 
-					<div class="flex justify-between mb-2">
-						<div class="relative bg-gradient-to-t from-white/5 to-white/15 rounded-sm py-3 px-2 w-full text-right px-3">
-
-							<div style="transform: translate(0, 8px)">
-								
-								<img style="position: absolute; transform: translate(0px, 0px);" src={care} alt="CARE" width="48">
-								<img style="position: absolute; transform: translate(0px, 0px);" src={nuke} alt="NUKE" width="20">
-							</div>
-
-								<span class="absolute sm:hidden" style="left:0; transform: translate(72px, 0px); color: #beee11;"><strong class="text-md">0.00</strong>%</span>
-								<p class="sm:text-left sm:ml-16">Stake <strong>CARE-NUKE</strong> earn <strong>CARE</strong></p>
-							
-								<div class="flex justify-end">
-									<span class="hidden sm:block text-xs p-1 mr-2" style="line-height: 2.2;">APR <span style="color: #beee11;"><strong class="text-lg">0.00</strong>%</span></span>
-									<span class="text-xs p-1" style="line-height: 2.2;"><strong>CARE</strong> earned </span>
-									<Button variant="outline" class="p-4">0.0</Button>
-									<Button class="p-2 ml-1"><Minus /></Button>
-									<Button class="p-2 ml-1"><Plus /></Button>
-								</div>
-						</div>
-						
-					</div>
+					
 					
 				</Card.Content>
 
