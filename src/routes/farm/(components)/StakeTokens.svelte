@@ -9,6 +9,7 @@
     let numberOfTokens = '';
     let parsedNumberOfTokens = parseEther(numberOfTokens);
   
+    // @ts-ignore
     const handleInputChange = (e) => {
     numberOfTokens = e.target.value;
     parsedNumberOfTokens = parseEther(numberOfTokens);

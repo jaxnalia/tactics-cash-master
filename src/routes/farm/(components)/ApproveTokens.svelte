@@ -7,7 +7,7 @@
     import { Button } from "$lib/components/ui/button";
     import { tokensEarned, tokenBalance, tokensStaked, lpTokenBalance } from './contractData';
 
-    let amountOfTokens
+    let amountOfTokens = ``
 
     lpTokenBalance.subscribe(tokens => {
 		amountOfTokens = tokens;

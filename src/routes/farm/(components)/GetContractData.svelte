@@ -7,11 +7,12 @@ import { getAccount } from '@wagmi/core'
 
 
 const account = getAccount()
-let Data
-let stakedBalance
-let leanBalance
-let lpBalance
-let emissionsPerToken
+let Data = ``
+let stakedBalance = ``
+let leanBalance = ``
+let lpBalance = ``
+let emissionsPerToken = ``
+
 
 onMount(async () => {
 
@@ -32,6 +33,7 @@ onMount(async () => {
         chainId: 369
     })
 
+    // @ts-ignore
     Data = ethers.formatEther(data)
     tokensEarned.update(earned => Data);
 
@@ -51,6 +53,7 @@ onMount(async () => {
         chainId: 369
     })
 
+    // @ts-ignore
     stakedBalance = ethers.formatEther(staked)
     tokensStaked.update(tokens => stakedBalance);
 
@@ -70,6 +73,7 @@ onMount(async () => {
         chainId: 369
     })
 
+    // @ts-ignore
     leanBalance = ethers.formatEther(leanBal)
     tokenBalance.update(tokens => leanBalance);
 
@@ -89,6 +93,7 @@ onMount(async () => {
         chainId: 369
     })
 
+    // @ts-ignore
     lpBalance = ethers.formatEther(lpBal)
     lpTokenBalance.update(tokens => lpBalance);
 
@@ -108,6 +113,7 @@ onMount(async () => {
         chainId: 369
     })
 
+    // @ts-ignore
     emissionsPerToken = ethers.formatEther(emissionPer);
     tokenEmissionPerSec.update(tokens => emissionsPerToken);
 })
