@@ -14,6 +14,13 @@ const config = {
 			}
 		},
 		extend: {
+			spacing: {
+				'128': '32rem',
+				'144': '36rem',
+				'152': '38rem',
+				'180': '45rem',
+				'256': '64rem'
+			  },
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",

@@ -100,7 +100,7 @@
 					</svg>
 				</div>
 				<p class="ml-3 leading-5">
-					Trustless yield without restrictions.
+					Trustless yield.
 				</p>
 			</li>
 			
