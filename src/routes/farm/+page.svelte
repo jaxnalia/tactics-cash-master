@@ -3,6 +3,7 @@
 	import * as Tabs from '$lib/components/ui/tabs'; //	Shadcn
 	import * as Card from '$lib/components/ui/card';
 	import * as AlertDialog from '$lib/components/ui/alert-dialog';
+	import * as Tooltip from "$lib/components/ui/tooltip/index.js";
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Label } from '$lib/components/ui/label';
@@ -27,10 +28,11 @@
 
 	import { getAccount } from '@wagmi/core'	//	Web3
 	import { getNetwork } from '@wagmi/core'
+	import { watchWalletClient } from '@wagmi/core'
 
-	const account = getAccount()
-	const { chain, chains } = getNetwork();
-	
+
+	let account = getAccount()
+	let { chain, chains } = getNetwork();
 
 
 </script>
@@ -84,7 +86,22 @@
 				<Card.Header class="p-5">
 					<h1 class="text-3xl font-bold">Liquidity Farm</h1>
 					<Card.Title>Stake PulseX V2 liquidity & earn <span class="font-bold">CARE</span></Card.Title>
-					<p class="absolute font-semibold" style="right:0;transform: translatex(-20px)"><span class="font-bold">CARE</span> per block: 0</p>
+
+					<div style="margin-top: -2.375rem;" class="hidden sm:flex justify-end">
+						<Tooltip.Root>
+						
+							<Tooltip.Trigger>
+								<span class="font-semibold" style=""><span class="font-bold">CARE</span> per block: 0</span>
+							</Tooltip.Trigger>
+							<Tooltip.Content>
+								0 CARE per day
+							</Tooltip.Content>
+							
+						</Tooltip.Root>
+					</div>
+					
+
+					
 				</Card.Header>
 				<Card.Content class="p-5 py-0 text-center">
 
@@ -215,7 +232,7 @@
 						<div class="flex justify-center">
 							<w3m-button class="text-black" size="md" label="Connect Wallet" balance="hide"/>
 						</div>
-						<p class="text-gray-500 text-sm mt-2 mb-2">Farms not showing? Try <a class="underline" href="https://tactics.cash/farm">reloading</a> the page.</p>
+						<p class="text-gray-500 text-sm mt-2 mb-2">Farms not showing? Try <button class="underline" onClick="window.location.reload()">reloading</button> the page.</p>
 					{/if}
 				</Card.Content>
 

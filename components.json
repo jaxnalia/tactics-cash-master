@@ -6,6 +6,7 @@
     "css": "src/app.pcss",
     "baseColor": "neutral"
   },
+  "typescript": false,
   "aliases": {
     "components": "$lib/components",
     "utils": "$lib/utils"
