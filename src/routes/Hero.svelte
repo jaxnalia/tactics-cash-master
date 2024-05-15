@@ -53,5 +53,10 @@
 
 		</div>
 	</div>
+	<!-- TrustBox widget - Review Collector -->
+<div id="trustbox" class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="6644ccb8539f9319f990fc4e" data-style-height="52px" data-style-width="100%">
+    <a href="https://uk.trustpilot.com/review/tactics.cash" target="_blank" rel="noopener">Trustpilot</a>
+  </div>
+  <!-- End TrustBox widget -->
 
 </div>
