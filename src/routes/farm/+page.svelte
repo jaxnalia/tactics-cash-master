@@ -223,7 +223,7 @@
 										</div>
 								</div>
 							</div>
-						{:else if  chain.id == 943}
+						{:else if chain.id == 943}
 							<p>Connected to PulseChain Testnet farm.</p>
 						{:else}
 							<p class="text-yellow-500 font-bold text-md mt-2 mb-2">Wrong network. Switch to PulseChain.</p>
@@ -232,7 +232,7 @@
 						<div class="flex justify-center">
 							<w3m-button class="text-black" size="md" label="Connect Wallet" balance="hide"/>
 						</div>
-						<p class="text-gray-500 text-sm mt-2 mb-2">Farms not showing? Try <button class="underline" onClick="window.location.reload()">reloading</button> the page.</p>
+						<p class="text-gray-500 text-sm mt-2 mb-2">Farms not showing? Click <button class="underline" onClick="window.location.reload()">here</button> to reload.</p>
 					{/if}
 				</Card.Content>
 
